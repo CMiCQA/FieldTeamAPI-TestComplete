@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root Signature="{5DCBAC3B-D39C-497C-9BE8-744CBADD37AA}" NameMappingVersion="7" SaveImages="0">
+	<Storages Current="0">
+		<Child Name="Default Configuration" />
+	</Storages>
+	<Nodes Name="NameMapping" Key="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Children>
+			<Child Name="Sys" Key="{04CC6BD6-09C9-4E36-AA2C-61A517C45FFA}">
+				<TypeInfo Item0="{5E8DF1F3-B799-4600-9F33-F36B9D52A399}" />
+				<Properties>
+					<Property Name="Name">
+						<Value Value="Sys" />
+					</Property>
+				</Properties>
+				<Children>
+					<Child Name="Browser" Key="{C50988BD-8649-491A-9F83-C90A0E4BE43D}">
+						<TypeInfo Item0="{C3D4048E-177C-427E-A7F5-28212237A7E8}" />
+						<Properties>
+							<Property Name="ObjectType">
+								<Value Value="Browser" />
+							</Property>
+						</Properties>
+						<Children>
+							<Child Name="PgeCmicR12LaunchPage" Key="{0CD7F898-67F7-4947-B77D-8000CD5A48C9}">
+								<Image FileName="1703802844" Left="11" Top="141" Right="1931" Bottom="1030" />
+								<TypeInfo Item0="{DE22DEFC-377F-4268-BF09-38D8B3158271}" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="Page" />
+									</Property>
+									<Property Name="URL">
+										<Value Value="https://qalatest.cmicpaas.com/cmiclaunch//cmiclaunch_R12.html" />
+									</Property>
+									<FilterCriteria>
+										<Root Group="AND">
+											<Item Operation="stdopequal">
+												<Left Value="DispValue:ObjectType" />
+												<Right Value="ConstStr:Page" />
+											</Item>
+											<Item Group="OR">
+												<Item Operation="stdopequal">
+													<Left Value="DispValue:URL" />
+													<Right Value="ConstStr:https://qalatest.cmicpaas.com/cmiclaunch//cmiclaunch_R12.html" />
+												</Item>
+												<Item Operation="stdopequal">
+													<Left Value="DispValue:URL" />
+													<Right Value="ConstStr:https://qa.cmicpaas.com/cmiclaunch/cmiclaunch_R12.html" />
+												</Item>
+											</Item>
+										</Root>
+									</FilterCriteria>
+								</Properties>
+								<Children>
+									<Child Name="PnlSelectAnEnvironment" Key="{699AFC91-2804-4EE4-98B3-7F31A9B2F9AB}">
+										<Image FileName="1703802844" Left="1416" Top="348" Right="1829" Bottom="1338" />
+										<TypeInfo Item0="{365DE4A4-1629-4951-97BA-5F264B220AAC}" />
+										<Selectors>
+											<Selector>
+												<Value Value="xpath=//h1[text()=&apos;R12 SOFTWARE&apos;]//ancestor::div//div[contains(@class,&apos;environment&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="LnkProjectManagement" Key="{AD4332B1-76F9-4F08-9D12-3E7F1B31F303}">
+										<Image FileName="534218626" Left="975" Top="145" Right="1386" Bottom="203" />
+										<TypeInfo Item0="{96D4E345-84D0-4887-BA60-B957F37B2E1B}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//a[.=&apos;Project Management&apos;]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="BtnLaunchSoftware" Key="{B3FA89A2-3B98-4DCC-9738-B6F65017219F}">
+										<Image FileName="-38270811" Left="1416" Top="821" Right="1829" Bottom="881" />
+										<TypeInfo Item0="{9015F7B2-03EC-404A-9ECF-2260BF06A919}" />
+										<Selectors>
+											<Selector>
+												<Value Value="//input[@name=&apos;runSoftware&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//input[@value=&apos;Launch Software&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[2]/div/div/div/input" />
+											</Selector>
+										</Selectors>
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="pageSignIn" Key="{8CF7A098-B61A-43EE-8D07-C0C050543C96}">
+								<Image FileName="-1606291642" Left="11" Top="141" Right="1931" Bottom="1030" />
+								<TypeInfo Item0="{DE22DEFC-377F-4268-BF09-38D8B3158271}" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="Page" />
+									</Property>
+									<Property Name="URL">
+										<Value Value="https://qalatestinfra.cmicpaas.com/oam/server/obrareq.cgi*" />
+									</Property>
+									<FilterCriteria>
+										<Root Group="AND">
+											<Item Operation="stdopequal">
+												<Left Value="DispValue:ObjectType" />
+												<Right Value="ConstStr:Page" />
+											</Item>
+											<Item Group="OR">
+												<Item Operation="stdopequal">
+													<Left Value="DispValue:URL" />
+													<Right Value="ConstStr:https://qalatestinfra.cmicpaas.com/*" />
+												</Item>
+												<Item Operation="stdopequal">
+													<Left Value="DispValue:URL" />
+													<Right Value="ConstStr:https://qainfra.cmicpaas.com/*" />
+												</Item>
+											</Item>
+										</Root>
+									</FilterCriteria>
+								</Properties>
+								<Children>
+									<Child Name="TextBoxUsername" Key="{855E739F-FA57-4950-8165-988ABEDB82C7}">
+										<Image FileName="-1606291642" Left="701" Top="607" Right="1241" Bottom="685" />
+										<TypeInfo Item0="{527BE4B9-46D0-48E2-A3B8-C36BABF209B1}" />
+										<Selectors>
+											<Selector>
+												<Value Value="#username" />
+											</Selector>
+											<Selector>
+												<Value Value="//input[@name=&apos;username&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//input[@type=&apos;text&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div/input[contains(@class, &apos;form-control&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;loginSection&apos;]//div/input" />
+											</Selector>
+											<Selector>
+												<Value Value="//div/input" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="TextBoxPassword" Key="{78937945-4A7A-490F-BB0A-A231021D3AB6}">
+										<Image FileName="-1900578567" Left="701" Top="708" Right="1241" Bottom="786" />
+										<TypeInfo Item0="{527BE4B9-46D0-48E2-A3B8-C36BABF209B1}" />
+										<Selectors>
+											<Selector>
+												<Value Value="#password" />
+											</Selector>
+											<Selector>
+												<Value Value="//input[@name=&apos;password&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//input[@type=&apos;password&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[2]/input[contains(@class, &apos;form-control&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[@id=&apos;loginSection&apos;]//div[2]/input" />
+											</Selector>
+											<Selector>
+												<Value Value="//div[2]/input" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="BtnSubmit" Key="{E9B05B8A-B1B2-426E-81B6-E091DA507559}">
+										<Image FileName="1657491682" Left="679" Top="818" Right="1264" Bottom="872" />
+										<TypeInfo Item0="{448B48EC-A72C-4831-A1FD-A40B90B00B2D}" />
+										<Selectors>
+											<Selector>
+												<Value Value="#submitBtn" />
+											</Selector>
+											<Selector>
+												<Value Value="//button[contains(text(), &apos;Sign In&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//button[@type=&apos;submit&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//button[contains(@class, &apos;btn&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="//form[@id=&apos;loginData&apos;]//button" />
+											</Selector>
+											<Selector>
+												<Value Value="//button" />
+											</Selector>
+										</Selectors>
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="PgeProjectManagement" Key="{26247B6F-29A1-4E01-B626-872CBF14EBD3}">
+								<Image FileName="1850242163" Left="0" Top="130" Right="1920" Bottom="1019" />
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="Page" />
+									</Property>
+									<Property Name="URL">
+										<Value Value="https://qalatestinfra.cmicpaas.com/oam/server/obrareq.cgi*" />
+									</Property>
+									<FilterCriteria>
+										<Root Group="AND">
+											<Item Operation="stdopequal">
+												<Left Value="DispValue:ObjectType" />
+												<Right Value="ConstStr:Page" />
+											</Item>
+											<Item Group="OR">
+												<Item Operation="stdopequal">
+													<Left Value="DispValue:URL" />
+													<Right Value="ConstStr:https://qalatest.cmicpaas.com/*" />
+												</Item>
+												<Item Operation="stdopequal">
+													<Left Value="DispValue:URL" />
+													<Right Value="ConstStr:https://qa.cmicpaas.com/*" />
+												</Item>
+											</Item>
+										</Root>
+									</FilterCriteria>
+								</Properties>
+								<Children>
+									<Child Name="frameTreeframe" Key="{65D2D52E-09FD-4D05-A5FD-A85482595BF9}">
+										<Image FileName="-853833627" Left="0" Top="184" Right="450" Bottom="1020" />
+										<TypeInfo Item0="{2311DCF9-6712-4648-A29E-5B04D3A6499B}" />
+										<Selectors>
+											<Selector>
+												<Value Value="css=#treeFrame" />
+											</Selector>
+											<Selector>
+												<Value Value="xpath=//iframe[@name=&apos;treeFrame&apos;]" />
+											</Selector>
+										</Selectors>
+										<Children>
+											<Child Name="PnlBidManagement" Key="{83FFFB30-779F-4831-B3E5-A6350FA41BD3}" ExtendedFind="True">
+												<Image FileName="-1304167377" Left="52" Top="529" Right="208" Bottom="551" />
+												<TypeInfo Item0="{625589EE-0463-48BC-83A0-8EFF208EF1CC}" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="TextNode" />
+													</Property>
+													<Property Name="contentText">
+														<Value Value="Bid Management" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="LblBidItems" Key="{38C6875C-81C7-49D4-A1C2-B4DDAD7B1045}" ExtendedFind="True">
+												<Image FileName="525722509" Left="88" Top="686" Right="169" Bottom="708" />
+												<TypeInfo Item0="{625589EE-0463-48BC-83A0-8EFF208EF1CC}" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="TextNode" />
+													</Property>
+													<Property Name="contentText">
+														<Value Value="Bid Items" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="LnkSubContract" Key="{878C8B77-FB86-4D19-BC1A-9D3BBBF20267}" ExtendedFind="True">
+												<Image FileName="-1663480695" Left="77" Top="623" Right="181" Bottom="645" />
+												<TypeInfo Item0="{C6D852BC-BA14-45BB-9DF2-BBFC6BA48CC2}" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="Link" />
+													</Property>
+													<Property Name="contentText">
+														<Value Value="Subcontract" />
+													</Property>
+													<Property Name="tagName">
+														<Value Value="A" />
+													</Property>
+													<Property Name="innerText">
+														<Value Value="Subcontract" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="LblBudgetAndCostManagement" Key="{9CAA9CB5-23D8-4C36-8C1D-C445440FF1DE}" ExtendedFind="True">
+												<Image FileName="-1546187230" Left="41" Top="570" Right="301" Bottom="592" />
+												<TypeInfo Item0="{625589EE-0463-48BC-83A0-8EFF208EF1CC}" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="TextNode" />
+													</Property>
+													<Property Name="innerText">
+														<Value Value="Budget &amp; Cost Management" />
+													</Property>
+													<Property Name="contentText">
+														<Value Value="Budget &amp; Cost Management" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="LnkPCI" Key="{7FD5A89A-04A7-42BB-92D5-83F37FE9420F}" ExtendedFind="True">
+												<Image FileName="1178747076" Left="88" Top="791" Right="291" Bottom="813" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="Link" />
+													</Property>
+													<Property Name="contentText">
+														<Value Value="Potential Change Items" />
+													</Property>
+													<Property Name="tagName">
+														<Value Value="A" />
+													</Property>
+													<Property Name="innerText">
+														<Value Value="Potential Change Items" />
+													</Property>
+												</Properties>
+											</Child>
+										</Children>
+									</Child>
+									<Child Name="frameHeaderframe" Key="{A1048F7F-8864-4ECB-9FFB-F6EC3BE84DA4}" ExtendedFind="True">
+										<Image FileName="-1053045314" Left="0" Top="130" Right="1920" Bottom="184" />
+										<Properties>
+											<Property Name="ObjectType">
+												<Value Value="Frame" />
+											</Property>
+											<Property Name="idStr">
+												<Value Value="headerFrame" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="LnkNavArrow" Key="{37DE5AC3-59BF-43F2-B8BF-F842F76C5AED}" ExtendedFind="True">
+												<Image FileName="-1053045314" Left="1761" Top="154" Right="1774" Bottom="174" />
+												<TypeInfo Item0="{78DC9789-738F-481B-8E3C-40A081486048}" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="Link" />
+													</Property>
+													<Property Name="FullName">
+														<Value Value="Sys.Browser(&quot;chrome&quot;).Page(&quot;https://qalatest.cmicpaas.com/cmicqalatest/SdMenu/&quot;).FindElement(&quot;#headerFrame&quot;).Panel(0).Table(0).Cell(0, 0).Table(0).Cell(0, 2).Table(&quot;headerButtonContainer&quot;).Cell(0, 2).Panel(&quot;TabNavArrowR&quot;).Link(0)" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="BtnShowimporteddata" Key="{2245BB6D-0832-4F9F-A3CC-76F8D240183B}" ExtendedFind="True">
+												<Image FileName="-902347959" Left="1541" Top="148" Right="1762" Bottom="187" />
+												<TypeInfo Item0="{BC050EE4-0704-439D-9CB8-7A1A3700A400}" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="Button" />
+													</Property>
+													<Property Name="idStr">
+														<Value Value="ShowImportedData" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="BtnDelete" Key="{3ED603D4-B27A-4551-96EC-640675CFAF94}" ExtendedFind="True">
+												<Image FileName="-750076253" Left="1105" Top="137" Right="1202" Bottom="176" />
+												<TypeInfo Item0="{BC050EE4-0704-439D-9CB8-7A1A3700A400}" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="Button" />
+													</Property>
+													<Property Name="idStr">
+														<Value Value="CmicDeleteButton" />
+													</Property>
+													<Property Name="className">
+														<Value Value="cmicHeaderButton" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="BtnDeleteAll" Key="{EFDA8B50-43F5-4767-ADC4-1E1F6F801720}" ExtendedFind="True">
+												<Image FileName="-1908597691" Left="807" Top="137" Right="904" Bottom="176" />
+												<TypeInfo Item0="{BC050EE4-0704-439D-9CB8-7A1A3700A400}" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="Button" />
+													</Property>
+													<Property Name="idStr">
+														<Value Value="DeleteAllButton" />
+													</Property>
+													<Property Name="className">
+														<Value Value="cmicHeaderButton" />
+													</Property>
+													<Property Name="contentText">
+														<Value Value="Delete" />
+													</Property>
+													<Property Name="ObjectLabel">
+														<Value Value="Delete" />
+													</Property>
+												</Properties>
+											</Child>
+										</Children>
+									</Child>
+									<Child Name="frameContentframe" Key="{EFE2960F-9805-4D62-BAC6-6B92654CAB40}">
+										<Image FileName="-240421092" Left="465" Top="184" Right="1920" Bottom="1020" />
+										<TypeInfo Item0="{2311DCF9-6712-4648-A29E-5B04D3A6499B}" />
+										<Selectors>
+											<Selector>
+												<Value Value="css=#contentFrame" />
+											</Selector>
+											<Selector>
+												<Value Value="xpath=//iframe[@name=&apos;contentFrame&apos;]" />
+											</Selector>
+										</Selectors>
+										<Children>
+											<Child Name="TblSearchResultsSC" Key="{BADFF20F-8E35-467D-A588-A64E6B21CCFE}" ExtendedFind="True">
+												<Image FileName="-537669608" Left="507" Top="226" Right="1900" Bottom="1000" />
+												<TypeInfo Item0="{365DE4A4-1629-4951-97BA-5F264B220AAC}" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="Panel" />
+													</Property>
+													<Property Name="idStr">
+														<Value Value="list" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value Value="list" />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="TxtBoxSeachSC" Key="{D50638DB-B18A-4CD8-9230-DBA4AFA94A03}" ExtendedFind="True">
+												<Image FileName="745266703" Left="526" Top="287" Right="995" Bottom="329" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="TextBox" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value Value="glSearchParam" />
+													</Property>
+													<Property Name="idStr">
+														<Value Value="glSearchParam" />
+													</Property>
+													<Property Name="placeholder">
+														<Value Value="Search..." />
+													</Property>
+												</Properties>
+											</Child>
+											<Child Name="BtnYes" Key="{3330B8F9-32EF-464F-A372-29AA4A71DA97}" ExtendedFind="True">
+												<Image FileName="-1919927287" Left="859" Top="610" Right="1071" Bottom="652" />
+												<TypeInfo Item0="{BC050EE4-0704-439D-9CB8-7A1A3700A400}" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="Button" />
+													</Property>
+													<Property Name="contentText">
+														<Value Value="Yes" />
+													</Property>
+												</Properties>
+											</Child>
+										</Children>
+									</Child>
+								</Children>
+							</Child>
+							<Child Name="PgeShowImportedData" Key="{A030C02F-13E7-4FD1-94FF-622B24CB7CA6}">
+								<Properties>
+									<Property Name="ObjectType">
+										<Value Value="Page" />
+									</Property>
+									<Property Name="URL">
+										<Value Value="https://qalatest.cmicpaas.com/cmiclaunch//cmiclaunch_R12.html" />
+									</Property>
+									<FilterCriteria>
+										<Root Group="AND">
+											<Item Operation="stdopequal">
+												<Left Value="DispValue:ObjectType" />
+												<Right Value="ConstStr:Page" />
+											</Item>
+											<Item Group="OR">
+												<Item Operation="stdopequal">
+													<Left Value="DispValue:URL" />
+													<Right Value="ConstStr:https://qalatest.cmicpaas.com/cmicqalatest/PmBidItems/*" />
+												</Item>
+												<Item Operation="stdopequal">
+													<Left Value="DispValue:URL" />
+													<Right Value="ConstStr:https://qa.cmicpaas.com/cmiclaunch/cmicqa/PmBidItems/*" />
+												</Item>
+												<Item Operation="stdopequal">
+													<Left Value="CustomDispValue:URL" />
+													<Right Value="ConstStr:https://qa.cmicpaas.com/cmicqadaily2/PmBidItems/*" />
+												</Item>
+											</Item>
+										</Root>
+									</FilterCriteria>
+								</Properties>
+								<Children>
+									<Child Name="ChkBoxShowCurrentProj" Key="{5D74215A-FDCD-46DB-81DC-E32A5602E26E}">
+										<Selectors>
+											<Selector>
+												<Value Value="xpath=//input[@id=&apos;showHideCurrProj&apos;]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="ChkBoxBidItem" Key="{1ED592F0-68AE-4EFC-93C9-C4ED07095E89}">
+										<Selectors>
+											<Selector>
+												<Value Value="xpath=(//input[@name=&apos;selectItemCB&apos;])[1]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="buttonReValidate" Key="{181E5B6D-36B6-49BD-9079-483EDEEA5A97}">
+										<Image FileName="87350403" Left="1432" Top="-1001" Right="1545" Bottom="-959" />
+										<TypeInfo Item0="{9015F7B2-03EC-404A-9ECF-2260BF06A919}" />
+										<Selectors>
+											<Selector>
+												<Value Value="#revalidateButton" />
+											</Selector>
+											<Selector>
+												<Value Value="//input[@value=&apos;Re-Validate&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//td[2]/input[@type=&apos;button&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="//td[2]/input[contains(@class, &apos;cmicButton&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+									<Child Name="Confirm" Key="{CC831276-42E7-4DAB-882B-9858ECCCCE65}">
+										<Image FileName="-786539308" Left="517" Top="84" Right="1211" Bottom="354" />
+										<TypeInfo Item0="{22052620-A51C-4F06-A695-51A98015617D}" />
+										<Properties>
+											<Property Name="ObjectType">
+												<Value Value="Confirm" />
+											</Property>
+										</Properties>
+										<Children>
+											<Child Name="buttonOk" Key="{D12CA5DB-DD2F-4A30-B580-A5AB0043EA0E}">
+												<Image FileName="-786539308" Left="945" Top="253" Right="1052" Bottom="311" />
+												<TypeInfo Item0="{9FB39C21-1A63-4B7A-9649-124221A12E4D}" />
+												<Properties>
+													<Property Name="ObjectType">
+														<Value Value="Button" />
+													</Property>
+													<Property Name="ObjectIdentifier">
+														<Value Value="OK" />
+													</Property>
+												</Properties>
+											</Child>
+										</Children>
+									</Child>
+									<Child Name="PnlCsvUploadRequestForm" Key="{4B8138B5-ABE3-4BD9-8900-C03C627D1563}">
+										<Image FileName="-549797930" Left="11" Top="-1207" Right="1906" Bottom="1411" />
+										<TypeInfo Item0="{365DE4A4-1629-4951-97BA-5F264B220AAC}" />
+										<Selectors>
+											<Selector>
+												<Value Value="#csvUploadRequestForm" />
+											</Selector>
+											<Selector>
+												<Value Value="form[@name=&apos;CsvUploadRequestForm&apos;]" />
+											</Selector>
+											<Selector>
+												<Value Value="form[contains(., &apos;Show Only Current Project Records&apos;)]" />
+											</Selector>
+											<Selector>
+												<Value Value="form[contains(@action, &apos;csvUploadRequest.do&apos;)]" />
+											</Selector>
+										</Selectors>
+									</Child>
+								</Children>
+							</Child>
+						</Children>
+					</Child>
+				</Children>
+			</Child>
+		</Children>
+	</Nodes>
+	<LogicalNodes Name="Aliases" Owner="{BE401E45-B2D6-4FBA-931A-C2117D5C51AD}">
+		<Child Name="Browser" Owner="{C50988BD-8649-491A-9F83-C90A0E4BE43D}">
+			<Child Name="PgeCmicR12LaunchPage" Owner="{0CD7F898-67F7-4947-B77D-8000CD5A48C9}">
+				<Child Name="PnlSelectAnEnvironment" Owner="{699AFC91-2804-4EE4-98B3-7F31A9B2F9AB}" />
+				<Child Name="LnkProjectManagement" Owner="{AD4332B1-76F9-4F08-9D12-3E7F1B31F303}" />
+				<Child Name="BtnLaunchSoftware" Owner="{B3FA89A2-3B98-4DCC-9738-B6F65017219F}" />
+			</Child>
+			<Child Name="pageSignIn" Owner="{8CF7A098-B61A-43EE-8D07-C0C050543C96}">
+				<Child Name="TextBoxUsername" Owner="{855E739F-FA57-4950-8165-988ABEDB82C7}" />
+				<Child Name="TextBoxPassword" Owner="{78937945-4A7A-490F-BB0A-A231021D3AB6}" />
+				<Child Name="BtnSubmit" Owner="{E9B05B8A-B1B2-426E-81B6-E091DA507559}" />
+			</Child>
+			<Child Name="PgeProjectManagement" Owner="{26247B6F-29A1-4E01-B626-872CBF14EBD3}">
+				<Child Name="frameTreeframe" Owner="{65D2D52E-09FD-4D05-A5FD-A85482595BF9}">
+					<Child Name="PnlBidManagement" Owner="{83FFFB30-779F-4831-B3E5-A6350FA41BD3}" />
+					<Child Name="LblBidItems" Owner="{38C6875C-81C7-49D4-A1C2-B4DDAD7B1045}" />
+					<Child Name="LnkSubContract" Owner="{878C8B77-FB86-4D19-BC1A-9D3BBBF20267}" />
+					<Child Name="LblBudgetAndCostManagement" Owner="{9CAA9CB5-23D8-4C36-8C1D-C445440FF1DE}" />
+					<Child Name="LnkPCI" Owner="{7FD5A89A-04A7-42BB-92D5-83F37FE9420F}" />
+				</Child>
+				<Child Name="frameHeaderframe" Owner="{A1048F7F-8864-4ECB-9FFB-F6EC3BE84DA4}">
+					<Child Name="LnkNavArrow" Owner="{37DE5AC3-59BF-43F2-B8BF-F842F76C5AED}" />
+					<Child Name="BtnShowimporteddata" Owner="{2245BB6D-0832-4F9F-A3CC-76F8D240183B}" />
+					<Child Name="BtnDelete" Owner="{3ED603D4-B27A-4551-96EC-640675CFAF94}" />
+					<Child Name="BtnDeleteAll" Owner="{EFDA8B50-43F5-4767-ADC4-1E1F6F801720}" />
+				</Child>
+				<Child Name="frameContentframe" Owner="{EFE2960F-9805-4D62-BAC6-6B92654CAB40}">
+					<Child Name="TblSearchResultsSC" Owner="{BADFF20F-8E35-467D-A588-A64E6B21CCFE}" />
+					<Child Name="TxtBoxSeachSC" Owner="{D50638DB-B18A-4CD8-9230-DBA4AFA94A03}" />
+					<Child Name="BtnYes" Owner="{3330B8F9-32EF-464F-A372-29AA4A71DA97}" />
+				</Child>
+			</Child>
+			<Child Name="PgeShowImportedData" Owner="{A030C02F-13E7-4FD1-94FF-622B24CB7CA6}">
+				<Child Name="ChkBoxShowCurrentProj" Owner="{5D74215A-FDCD-46DB-81DC-E32A5602E26E}" />
+				<Child Name="ChkBoxBidItem" Owner="{1ED592F0-68AE-4EFC-93C9-C4ED07095E89}" />
+				<Child Name="BtnReValidate" Owner="{181E5B6D-36B6-49BD-9079-483EDEEA5A97}" />
+				<Child Name="Confirm" Owner="{CC831276-42E7-4DAB-882B-9858ECCCCE65}">
+					<Child Name="buttonOk" Owner="{D12CA5DB-DD2F-4A30-B580-A5AB0043EA0E}" />
+				</Child>
+				<Child Name="PnlCsvUploadRequestForm" Owner="{4B8138B5-ABE3-4BD9-8900-C03C627D1563}" />
+			</Child>
+		</Child>
+	</LogicalNodes>
+</Root>
